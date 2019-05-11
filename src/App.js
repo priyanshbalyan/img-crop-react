@@ -51,7 +51,7 @@ class App extends Component{
           onImgLoaded();
         }, 3);
       } else {
-          // if(imgObject.width !== 1024 || imgObject.height !== 1024) return context.setState({error:"Only 1024x1024 sized images are allowed.", loading:false});
+          if(imgObject.width !== 1024 || imgObject.height !== 1024) return context.setState({error:"Only 1024x1024 sized images are allowed.", loading:false});
 
           var tnCanvas = document.createElement('canvas');
           var tnCanvasContext = tnCanvas.getContext('2d');
