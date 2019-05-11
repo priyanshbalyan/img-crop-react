@@ -34,7 +34,7 @@ class App extends Component{
         this.imageCrop(this, 2, file, 365, 212);
         this.imageCrop(this, 3, file, 380, 380);
     }else{
-      this.setState({error: "Only image files are allowed."});
+      this.setState({error: "Only image files are allowed.", loading:false});
     }
 
   }
